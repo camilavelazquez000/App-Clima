@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece la altura del contenedor al 100% de la altura de la ventana del navegador */
+}
+
+.card {
+    width: 90%;
+    max-width: 460px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    padding-left: 15px;
+}
+
+
+.search input, button{
+    border: 0;  /*elimina bordes predeterminados*/
+    /*outline: 0; *Elimina el contorno que aparece alrededor de un elemento cuando está enfocado*/
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1; /* hace que el elemento se expanda para ocupar todo el espacio disponible en su contenedor, compartiendo este espacio disponible con otros elementos flexibles de manera equitativa si los hay.*/
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+.search button{
+    cursor: pointer;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.weather i{
+    font-size: 100px;
+    padding: 15px;
+}
+
+.weather h1{
+    font-size: 65px;
+}
+
+.weather h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 15px;
+    padding: 0px 40px;
+}
+.col i{
+    font-size: 30px;
+    padding: 0px 5px;
+}
+
+.col p{
+    font-size: 10px;
+}
